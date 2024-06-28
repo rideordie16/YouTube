@@ -42,6 +42,12 @@ https://github.com/rideordie16/YouTube/raw/main/haber/ahaber.m3u8
 https://github.com/rideordie16/YouTube/raw/main/haber/apara.m3u8
 ```
 
+### CNN Türk
+
+```
+https://github.com/rideordie16/YouTube/raw/main/haber/cnnturk.m3u8
+```
+
 
 ## SPOR
 
