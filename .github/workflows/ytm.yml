@@ -103,6 +103,36 @@ jobs:
         $(yt-dlp --print urls https://www.youtube.com/@FobosPlanet/live)
         EOL
 
+    - name: Get Ocean
+      run: |
+        touch ./other/ocean.m3u8
+        sudo cat >./other/ocean.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/@Relax321Relaxing/live)
+        EOL
+
+    - name: Get SnowStorm
+      run: |
+        touch ./other/snowstorm.m3u8
+        sudo cat >./other/snowstorm.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/@purerelaxingvibes/live)
+        EOL
+
+    - name: Get RelaxingMusic
+      run: |
+        touch ./other/relaxingmusic.m3u8
+        sudo cat >./other/relaxingmusic.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/@timjanis/live)
+        EOL
+
     - name: git add
       run: |
         git add -A
