@@ -93,6 +93,16 @@ jobs:
         $(yt-dlp --print urls https://www.youtube.com/@sirinler/live)
         EOL
 
+    - name: Get FirePlace
+      run: |
+        touch ./other/fireplace.m3u8
+        sudo cat >./other/fireplace.m3u8 <<EOL
+        #EXTM3U
+        #EXT-X-VERSION:3
+        #EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2560000
+        $(yt-dlp --print urls https://www.youtube.com/@FobosPlanet/live)
+        EOL
+
     - name: git add
       run: |
         git add -A
